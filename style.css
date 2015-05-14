@@ -1,1 +1,63 @@
 /* The Matter of Records */
+
+/* 
+
+CONTENTS:
+
+GENERAL
+TEXT
+HEADER	
+MAST
+SUB-MAST
+MAIN
+FOOTER
+
+*/
+
+/* GENERAL */
+
+/* TEXT */
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 80%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Dosis', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+a {
+	border-radius: 2px;
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	background: #edf968;
+}
+
+/* HEADER */
+header {
+
+}
+
+/* MAST */
+section#mast {
+
+}
+
+/* SUB-MAST */
+section#sub-mast {
+
+}
+
+/* MAIN */
+section#main {
+
+}
+
+/* FOOTER */
+footer {
+
+}
