@@ -7,14 +7,22 @@ CONTENTS:
 GENERAL
 TEXT
 HEADER	
+NAV
 MAST
 SUB-MAST
 MAIN
+HOME
 FOOTER
 
 */
 
 /* GENERAL */
+div, section, header, footer {
+	overflow: hidden;
+}
+section, header, footer {
+	clear: both;
+}
 
 /* TEXT */
 body {
@@ -42,6 +50,8 @@ header {
 
 }
 
+/* NAV */
+
 /* MAST */
 section#mast {
 
@@ -54,7 +64,29 @@ section#sub-mast {
 
 /* MAIN */
 section#main {
+	margin: 0 auto;
+	width: 90%;
+}
 
+/* HOME */
+div.featured-story {
+	width: 48%;
+	padding-bottom: 30px;
+}
+div.featured-story:nth-child(even) {
+	float: left;
+	clear: both;
+}
+div.featured-story:nth-child(odd) {
+	float: right;
+}
+div.featured-story h2,
+div.featured-story p {
+	margin: 0;
+}
+div.featured-story img {
+	width: 100%;
+	margin-bottom: 4px;
 }
 
 /* FOOTER */
