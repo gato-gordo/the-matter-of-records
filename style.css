@@ -17,20 +17,35 @@ FOOTER
 */
 
 /* GENERAL */
+* {
+	-webkit-transition: .5s; 
+    transition: .5s;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
 div, section, header, footer {
 	overflow: hidden;
+	position: relative;
 }
 section, header, footer {
 	clear: both;
 }
+img {
+	border-radius: 2px;
+}
 
 /* TEXT */
+@font-face { 
+	font-family: Logo; src: url('fonts/spinwerad.ttf'); 
+} 
 body {
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 80%;
 }
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, nav ul li a {
 	font-family: 'Dosis', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -41,30 +56,92 @@ a {
 	text-decoration: none;
 	color: #000;
 }
-a:hover {
+a:hover, li.current a {
 	background: #edf968;
+}
+h1, .logo-font {
+	font-family: 'Logo', serif;
 }
 
 /* HEADER */
 header {
-
+	position: fixed;
+	width: 90%;
+	z-index: 5;
+	height: 42px;
+	top: 0;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 0 5%;
+}
+#header-left {
+	float: left;
+}
+#header-right {
+	float: right;
+	text-align: right; 
 }
 
 /* NAV */
+nav ul {
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+}
+#header-left ul li, 
+#footer-left nav ul li {
+	padding-right: 20px;
+}
+#header-right ul li, 
+#footer-right nav ul li {
+	padding-left: 20px;
+}
 
 /* MAST */
 section#mast {
-
+	margin-top: 42px;
+	text-align: center;
+}
+section#mast img {
+	width: 100%;
+}
+section#mast a {
+	position: absolute; 
+	display: block;
+	width: 25%;
+	height: 32%;
+	top: 19%;
+	left: 27%;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	font-size: 400%;
+	padding: 13% 10% 7% 10%;
+	color: rgba(0, 0, 0, 0.7);
+}
+section#mast a span {
+	font-size: 180%;
+	line-height: 70%;
+}
+section#mast a:hover {
+	background: rgba(237, 249, 104, 0.5);
 }
 
 /* SUB-MAST */
 section#sub-mast {
-
+	background: #eaeaea;
+	text-align: center;
+	padding: 10px;
+}
+section#sub-mast .logo {
+	width: 500px;
+	max-width: 90%;
 }
 
 /* MAIN */
 section#main {
-	margin: 0 auto;
+	margin: 30px auto;
 	width: 90%;
 }
 
@@ -84,12 +161,27 @@ div.featured-story h2,
 div.featured-story p {
 	margin: 0;
 }
+div.featured-story a.image-link {
+	background: #edf968;
+	display: block;	
+	margin-bottom: 4px;
+}
 div.featured-story img {
 	width: 100%;
-	margin-bottom: 4px;
+}
+div.featured-story img:hover {
+	opacity: 0.7;
 }
 
 /* FOOTER */
 footer {
-
+	background: #eaeaea;
+	padding: 0 5%;
+}
+#footer-left {
+	float: left;
+}
+#footer-right {
+	float: right;
+	text-align: right;
 }
