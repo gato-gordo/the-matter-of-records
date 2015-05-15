@@ -11,29 +11,36 @@
 			<nav id="header-left">
 				<ul>
 					<li><a href="index.html">Featured Stories</a></li>
-					<li class="current"><a href="">All Stories</a></li>
+					<li><a href="archive.html">All Stories</a></li>
 				</ul>
 			</nav>
 			<nav id="header-right">
 				<ul>
-					<li><a href="submit.html">Submit Your Story<i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a></li>
+					<li class="current"><a href="submit.html">Submit Your Story<i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<section id="sub-mast">
-			<img src="images/logo.png" class="logo"/>
+			<a href="index.html"><img src="images/logo.png" class="logo"/></a>
 		</section>
 
 		<section id="main">
 			<h1 class="logo-font">Submit A Story</h1>
 			<p>Explanatory text regarding story submission.</p>
 			<form id="story-submit">
-				<input type="text" name="name" placeholder="Name">
-				<input type="text" name="email" placeholder="Email">
-				<input type="text" name="title" placeholder="Story Title">
-				<p>Upload an image to include with your post. Horizontal images are best, as vertical images will be cropped to fit.</p>
-				<input type="file" name="image">
+				<div>
+					<input type="text" name="name" placeholder="Name"><label><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i>Enter the name you'd like to display on the site.</label>
+				</div>
+				<div>
+					<input type="text" name="email" placeholder="Email"><label><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i>Your contact information will not be shared.</label>
+				</div>
+				<div>
+					<input type="text" name="title" placeholder="Story Title"><label><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i>Short and sweet, please.</label>
+				</div>
+				<div>
+					<input type="file" name="image"><label><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i>Upload an image to include with your post. Horizontal images are best.</label>
+				</div>
 				<textarea name="story" placeholder="Enter your story text here. Information about word limits, etc."></textarea>
 				<input type="submit" name="submit">
 			</form>
@@ -47,8 +54,8 @@
 				<nav id="footer-nav">
 					<ul>
 						<li><a href="index.html">Featured Stories</a></li>
-						<li class="current"><a href="">All Stories</a></li>
-						<li><a href="submit.html">Submit Your Story</a></li>
+						<li><a href="archive.">All Stories</a></li>
+						<li class="current"><a href="">Submit Your Story</a></li>
 					</ul>
 				</nav>
 			</div>
