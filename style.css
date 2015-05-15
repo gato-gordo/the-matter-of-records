@@ -12,6 +12,7 @@ MAST
 SUB-MAST
 MAIN
 HOME
+FORM
 FOOTER
 
 */
@@ -61,6 +62,16 @@ a:hover, li.current a {
 }
 h1, .logo-font {
 	font-family: 'Logo', serif;
+	color: #60020d;
+}
+h1 {
+	font-size: 200%;
+}
+i.fa {
+	color: #60020d;
+	font-size: 80%;
+	position: relative;
+	top: -1px;
 }
 
 /* HEADER */
@@ -126,6 +137,7 @@ section#mast a span {
 }
 section#mast a:hover {
 	background: rgba(237, 249, 104, 0.5);
+	color: #60020d;
 }
 
 /* SUB-MAST */
@@ -137,6 +149,9 @@ section#sub-mast {
 section#sub-mast .logo {
 	width: 500px;
 	max-width: 90%;
+}
+#interior section#sub-mast {
+	margin-top: 42px;
 }
 
 /* MAIN */
@@ -171,6 +186,32 @@ div.featured-story img {
 }
 div.featured-story img:hover {
 	opacity: 0.7;
+}
+
+/* FORM */
+form input, form textarea {
+	clear: both;
+	width: 50%;
+	border-radius: 2px;
+	box-shadow: none;
+	border: 1px solid #edf968;
+	margin-bottom: 10px; 
+	padding: 5px; 
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+}
+form textarea {
+	width: 100%;
+	font-size: 120%;
+}
+form input:focus, form textarea:focus {
+	border: 1px solid #60020d;
+	outline: none;
+}
+form textarea {
+	resize: none;
+	height: 350px; 
 }
 
 /* FOOTER */
